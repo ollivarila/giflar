@@ -30,7 +30,7 @@ pub enum DecodeError {
     Io(#[from] std::io::Error),
 }
 
-pub fn decode<R: Read>(mut source: R) -> Result<Gif, DecodeError> {
+pub fn parse<R: Read>(mut source: R) -> Result<Gif, DecodeError> {
     let mut bytes = Vec::new();
     source.read_to_end(&mut bytes)?;
 

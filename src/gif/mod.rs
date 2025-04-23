@@ -12,7 +12,7 @@ use extension::{
 };
 use table::{GlobalColorTable, LocalColorTable};
 
-/// Represents a decoded GIF
+/// Represents a parsed GIF
 /// https://www.matthewflickinger.com/lab/whatsinagif/bits_and_bytes.asp
 #[derive(Clone)]
 pub struct Gif {
