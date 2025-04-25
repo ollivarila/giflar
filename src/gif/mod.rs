@@ -12,6 +12,11 @@ use extension::{
 };
 use table::{GlobalColorTable, LocalColorTable};
 
+#[derive(Clone)]
+pub struct Frame {
+    pub pixels: Vec<Color>,
+}
+
 /// Represents a parsed GIF
 /// https://www.matthewflickinger.com/lab/whatsinagif/bits_and_bytes.asp
 #[derive(Clone)]
